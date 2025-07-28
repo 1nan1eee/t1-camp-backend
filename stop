@@ -1,0 +1,18 @@
+[33mcommit 204031ebf76b73ce81b2515f73f1587cd1c5aa4c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Marina <maryfairy@bk.ru>
+Date:   Mon Jul 28 17:37:03 2025 +0100
+
+    switched to branch main
+
+hw3/BishopPrototypeProject/HELP.md
+hw3/BishopPrototypeProject/target/classes/application.properties
+hw3/BishopPrototypeProject/target/classes/com/bishopprototype/BishopPrototypeApplication.class
+hw3/BishopPrototypeProject/target/classes/com/bishopprototype/controller/CommandController.class
+hw3/BishopPrototypeProject/target/classes/com/bishopprototype/service/CommandService.class
+hw3/BishopPrototypeProject/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+hw3/BishopPrototypeProject/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+hw3/BishopPrototypeProject/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+hw3/BishopPrototypeProject/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+hw3/BishopPrototypeProject/target/surefire-reports/TEST-com.weylandyutani.bishopprototype.BishopPrototypeApplicationTests.xml
+hw3/BishopPrototypeProject/target/surefire-reports/com.weylandyutani.bishopprototype.BishopPrototypeApplicationTests.txt
+hw3/BishopPrototypeProject/target/test-classes/com/weylandyutani/bishopprototype/BishopPrototypeApplicationTests.class
