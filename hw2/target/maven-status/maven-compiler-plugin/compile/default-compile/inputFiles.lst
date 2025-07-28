@@ -1,8 +1,12 @@
 C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\annotation\AuditMode.java
 C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\annotation\WeylandWatchingYou.java
 C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\aspect\AuditAspect.java
+C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\config\SyntheticHumanAutoConfiguration.java
 C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\exception\GlobalExceptionHandler.java
+C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\exception\QueueFullException.java
 C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\model\Command.java
+C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\model\ErrorResponse.java
+C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\model\Priority.java
 C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\service\AndroidMetrics.java
 C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\service\CommandProcessor.java
 C:\Users\maryf\Documents\NetBeansProjects\t1-camp-backend\hw2\src\main\java\com\weylandyutani\synthetichumancorestarter\SyntheticHumanCoreStarterApplication.java

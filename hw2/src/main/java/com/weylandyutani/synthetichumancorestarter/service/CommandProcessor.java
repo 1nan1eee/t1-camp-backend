@@ -32,7 +32,6 @@ public class CommandProcessor {
     private void executeCommand(Command command) {
         try {
             log.info("Executing command: {}", command);
-            // Здесь может быть логика выполнения команды
             androidMetrics.recordCommandExecution(command.getAuthor());
         } catch (Exception e) {
             log.error("Error executing command: {}", command, e);

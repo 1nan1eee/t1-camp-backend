@@ -17,7 +17,7 @@ public class Command {
     private String description;
     
     @NotNull
-    private Priority priority; // Используется наше перечисление Priority из пакета model
+    private Priority priority;
     
     @Size(max = 100, message = "Author must be less than 100 characters")
     private String author;
