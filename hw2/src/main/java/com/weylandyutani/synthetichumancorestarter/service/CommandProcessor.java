@@ -2,6 +2,7 @@ package com.weylandyutani.synthetichumancorestarter.service;
 
 import com.weylandyutani.synthetichumancorestarter.exception.QueueFullException;
 import com.weylandyutani.synthetichumancorestarter.model.Command;
+import com.weylandyutani.synthetichumancorestarter.model.Priority;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -13,12 +14,12 @@ import org.springframework.stereotype.Service;
 public class CommandProcessor {
     private final ThreadPoolExecutor executor = new ThreadPoolExecutor(2, 5, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue<>(100));
 
-        public void processCommand(Command command) throws QueueFullException {
+    public void processCommand(Command command) throws QueueFullException {
         if (command.getPriority() == Priority.CRITICAL) {
             executeCommand(command);
         } else {
             if (executor.getQueue().remainingCapacity() == 0) {
-                throw new QueueFullException("Command queue is full");
+                throw new QueueFullException("CommonCommandQueue", 100, "Command queue is full");
             }
             executor.submit(() -> executeCommand(command));
         }
