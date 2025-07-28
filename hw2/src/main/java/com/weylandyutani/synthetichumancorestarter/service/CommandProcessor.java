@@ -1,13 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.weylandyutani.synthetichumancorestarter.service;
+import jakarta.annotation.Priority;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
-/**
- *
- * @author maryf
- */
+@Slf4j
+@Service
 public class CommandProcessor {
-    
+    private final ThreadPoolExecutor executor = new ThreadPoolExecutor(2, 5, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue<>(100));
+
+        public void processCommand(Command command) throws QueueFullException {
+        if (command.getPriority() == Priority.CRITICAL) {
+            executeCommand(command);
+        } else {
+            if (executor.getQueue().remainingCapacity() == 0) {
+                throw new QueueFullException("Command queue is full");
+            }
+            executor.submit(() -> executeCommand(command));
+        }
+    }
+
+    private void executeCommand(Command command) {
+        log.info("Executing command: {}", command);
+    }
 }
