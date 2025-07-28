@@ -28,7 +28,14 @@ public class AuditAspect {
         if (weylandWatchingYou.mode() == AuditMode.CONSOLE) {
             log.info("Audit: {}", auditMessage);
         } else {
-            kafkaTemplate.send("audit-topic", auditMessage);
+            kafkaTemplate.send("audit-topic", auditMessage)
+                .whenComplete((sendResult, throwable) -> {
+                    if (throwable != null) {
+                        log.error("Failed to send audit message to Kafka: {}", auditMessage, throwable);
+                    } else {
+                        log.debug("Audit message sent to Kafka: {}", auditMessage);
+                    }
+                });
         }
         return result;
     }
