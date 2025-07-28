@@ -10,7 +10,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
         
-	<groupId>com.weylandyutani</groupId>
+	<groupId>com</groupId>
 	<artifactId>bishopprototype</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bishop-prototype</name>
@@ -27,7 +27,7 @@
 		</dependency>
                 <dependency>
                         <groupId>com.weylandyutani</groupId>
-                        <artifactId>synthetic-human-core-starter</artifactId>
+                        <artifactId>synthetichumancorestarter</artifactId>
                         <version>0.0.1-SNAPSHOT</version>
                 </dependency>
                 <dependency>
