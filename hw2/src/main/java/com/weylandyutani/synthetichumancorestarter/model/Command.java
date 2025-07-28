@@ -1,3 +1,5 @@
+package com.weylandyutani.synthetichumancorestarter.model;
+
 import jakarta.annotation.Priority;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
